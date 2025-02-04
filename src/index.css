@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e27442;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-container {
+  color: white;
+  padding: 20px;
+  width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo {
+  width: 400px;
+}
+
+.todo-container h2 {
+  padding: 10px;
+  font-family: 'Candal', sans-serif;
+  font-size: 2em;
+}
+
+.todo-header input {
+  width: 92%;
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  font-family: 'Candal', sans-serif;
+}
+
+.todo-header button {
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+  font-family: 'Candal', sans-serif;
+  background-color: rgb(51, 212, 100);
+}
+
+.todo-container ul {
+  list-style: none;
+}
+
+.todo-list-item {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Candal', sans-serif;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+}
+
+.todo-list-item form {
+  width: 100%;
+  display: flex;
+}
+
+.todo-list-item input {
+  flex-grow: 2;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Candal', sans-serif;
+}
+
+.todo-list-item button {
+  color: white;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-family:'Candal', sans-serif;
+  background-color: rgb(51, 212, 100);
+}
+
+.todo-list-item .cancel {
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-family: 'Candal', sans-serif;
+  background-color: rgb(223, 43, 43);
+  margin-left: 5px;
+}
+
+.todo-list-item div {
+  flex-grow: 2;
+}
+
+.todo-list-item .edit {
+  padding-left: 10px;
+  color: white;
+  margin-right: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.remove {
+  background-color: #dc3545;
+  color: white;
+  width: 32px;
+}
+
+.remove:hover {
+  background-color: #c82333;
+}
+
+.edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+.edit:hover {
+  background-color: #e0a800;
+}
+
+.remove, .edit {
+  display: inline-flex;
+  align-items: center;
+}
+
+.remove span, .edit span {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.remove:hover, .edit:hover, .check:hover {
+  transform: scale(1.1);
+}
+
+.check:hover {
+  background-color: darkgreen;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.email {
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal input {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.modal button {
+  margin: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Primary button */
+.btnSave {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.btnSave:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Danger button */
+.btnCancel {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.btnCancel {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.inputRead {
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.inputNew {
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+}
